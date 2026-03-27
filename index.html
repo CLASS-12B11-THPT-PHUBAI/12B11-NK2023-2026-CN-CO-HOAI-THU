@@ -2,15 +2,115 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>QuyQuocDepZai - Official</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web học trực tuyến</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: #00ff00; text-align: center; padding-top: 100px; }
-        h1 { font-size: 50px; text-transform: uppercase; border: 2px solid #00ff00; display: inline-block; padding: 20px; }
+        /* Đặt lại các khoảng cách mặc định để trang web gọn gàng hơn */
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f2f5; 
+        }
+
+        /* Trang trí thanh phần trên cùng (Header) */
+        header { 
+            background-color: #1a73e8; /* Màu xanh dương giống nhiều trang giáo dục */
+            color: white; 
+            padding: 15px 30px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        /* Trang trí các đường link trên thanh menu */
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Hiện gạch chân khi đưa chuột vào */
+        }
+
+        /* Trang trí phần banner chào mừng */
+        .banner { 
+            background-color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* Cấu trúc phần chứa các khóa học */
+        .danh-sach-khoa-hoc { 
+            display: flex; 
+            justify-content: center; 
+            padding: 30px; 
+            gap: 20px; /* Khoảng cách giữa các khóa học */
+            flex-wrap: wrap; /* Tự động xuống dòng nếu màn hình nhỏ */
+        }
+
+        /* Trang trí từng ô khóa học */
+        .khoa-hoc { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; /* Bo tròn góc */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Tạo bóng đổ nhẹ cho đẹp */
+            width: 250px; 
+            text-align: center; 
+        }
+
+        /* Trang trí nút bấm */
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1557b0;
+        }
     </style>
 </head>
 <body>
-    <h1>QUY QUỐC ĐẸP ZAI . IO</h1>
-    <p>Biết lập trình là một lợi thế, không tốn tiền vẫn có web xịn!</p>
+
+    <header>
+        <div class="logo"><h2>HọcTốt.vn</h2></div>
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Khóa học</a>
+            <a href="#">Thi thử</a>
+            <a href="#">Đăng nhập</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Bứt phá điểm số cùng chúng tôi!</h1>
+        <p>Hệ thống bài giảng và thi thử trắc nghiệm bám sát chương trình.</p>
+    </div>
+
+    <div class="danh-sach-khoa-hoc">
+        <div class="khoa-hoc">
+            <h3>Toán Học 12</h3>
+            <p>Luyện thi THPT Quốc Gia</p>
+            <button>Học ngay</button>
+        </div>
+        <div class="khoa-hoc">
+            <h3>Vật Lý 12</h3>
+            <p>Chinh phục điểm 9+</p>
+            <button>Học ngay</button>
+        </div>
+        <div class="khoa-hoc">
+            <h3>Hóa Học 12</h3>
+            <p>Nắm trọn lý thuyết và bài tập</p>
+            <button>Học ngay</button>
+        </div>
+    </div>
+
 </body>
 </html>
-
